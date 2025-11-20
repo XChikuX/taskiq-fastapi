@@ -74,6 +74,8 @@ async def app_shutdown():
 
 
 # Here we call our magic function.
+# NOTE: In case you define brokers in separate file
+#       Make sure you define this there. 
 taskiq_fastapi.init(broker, "test_script:app")
 
 
